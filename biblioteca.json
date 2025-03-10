@@ -1,0 +1,29 @@
+{
+    "libros": [
+        {
+            "titulo": "1984",
+            "autor": "George Orwell",
+            "categoria": "Ficci\u00f3n",
+            "isbn": "123456"
+        },
+        {
+            "titulo": "El principito",
+            "autor": "Antoine de Saint-Exup\u00e9ry",
+            "categoria": "Infantil",
+            "isbn": "789101"
+        },
+        {
+            "titulo": "Padre Rico, Padre Pobre",
+            "autor": "Robert Kiyosaki",
+            "categoria": "Educaci\u00f3n Financiera",
+            "isbn": "9780446677455"
+        }
+    ],
+    "usuarios": [
+        {
+            "nombre": "Carlos P\u00e9rez",
+            "id_usuario": "001",
+            "libros_prestados": []
+        }
+    ]
+}

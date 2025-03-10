@@ -1,10 +1,11 @@
 from Biblioteca import Biblioteca
 from Libro import Libro
 from Usuario import Usuario
+import json
 
-# Menú interactivo
 biblioteca = Biblioteca()
 
+# Menú interactivo
 while True:
     print("\nMenú de Biblioteca:")
     print("1. Añadir libro")
@@ -13,9 +14,7 @@ while True:
     print("4. Dar de baja usuario")
     print("5. Prestar libro")
     print("6. Devolver libro")
-    print("7. Buscar libro")
-    print("8. Listar libros prestados")
-    print("9. Salir")
+    print("7. Salir")
     
     opcion = input("Seleccione una opción: ")
     
@@ -44,13 +43,6 @@ while True:
         isbn = input("ISBN del libro a devolver: ")
         biblioteca.devolver_libro(id_usuario, isbn)
     elif opcion == "7":
-        criterio = input("Buscar por (titulo/autor/categoria): ")
-        valor = input("Valor de búsqueda: ")
-        biblioteca.buscar_libro(criterio, valor)
-    elif opcion == "8":
-        id_usuario = input("ID del usuario: ")
-        biblioteca.listar_libros_prestados(id_usuario)
-    elif opcion == "9":
         print("Saliendo del sistema...")
         break
     else:
